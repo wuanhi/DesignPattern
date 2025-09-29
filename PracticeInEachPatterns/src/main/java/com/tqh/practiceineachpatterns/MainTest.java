@@ -16,6 +16,8 @@ import com.tqh.practiceineachpatterns.AbstractFactory.GUIFilmManagement.ModernFa
 import com.tqh.practiceineachpatterns.AbstractFactory.GUIFilmManagement.Weapon;
 import com.tqh.practiceineachpatterns.AbstractFactory.GameUI.GameApplication;
 import com.tqh.practiceineachpatterns.AbstractFactory.GameUI.GameUIFactory;
+import com.tqh.practiceineachpatterns.Builder.ComputerManagement;
+import com.tqh.practiceineachpatterns.Builder.MealManagement;
 import com.tqh.practiceineachpatterns.FactoryMethod.DocumentManagement.DocumentFactory;
 import com.tqh.practiceineachpatterns.FactoryMethod.DocumentManagement.ExcelFactory;
 import com.tqh.practiceineachpatterns.FactoryMethod.NotificationManagement.EmailNotiFactory;
@@ -27,6 +29,10 @@ import com.tqh.practiceineachpatterns.FactoryMethod.JuiceSqueeze.OrangeJuiceFact
 import com.tqh.practiceineachpatterns.FactoryMethod.NotificationManagement.NotificationFactory;
 import com.tqh.practiceineachpatterns.FactoryMethod.NotificationManagement.SMSNotiFactory;
 import com.tqh.practiceineachpatterns.FactoryMethod.DocumentManagement.WordFactory;
+import com.tqh.practiceineachpatterns.Prototype.ImageEditor;
+import com.tqh.practiceineachpatterns.Prototype.ImagePrototype;
+import com.tqh.practiceineachpatterns.Prototype.MapPrototype;
+import com.tqh.practiceineachpatterns.Prototype.MiniMap;
 
 /**
  *
@@ -73,6 +79,23 @@ public class MainTest {
 //        g = new CyberpunkFactory();
 //        app = new GameApplication(g);
 //        app.display();
-
+         
+        // Builder 
+//        MealManagement meal = new MealManagement.MealBuilder("Com rang").build(); 
+//        System.out.println(meal);
+//        
+//        ComputerManagement computer = new ComputerManagement.ComputerBuilder("Intel i9", "32gb").build();
+//        System.out.println(computer);
+//        
+        // Prototype
+//        MapPrototype m = new MiniMap(100); 
+//        m.edit();
+//        MapPrototype copy_map = (MiniMap) m.clone();
+//        copy_map.edit();
+//        
+//        ImagePrototype img = new ImageEditor("Resize and Fill color"); 
+//        img.editImg();
+//        ImagePrototype cop_img = img.clone(); 
+//        cop_img.editImg();
     }
 }
